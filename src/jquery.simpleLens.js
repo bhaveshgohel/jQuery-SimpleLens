@@ -2,7 +2,7 @@
  * jQuery Lens Simple Plugin
  * Copyright (c) 2014 Pietro Simone Di Chiara
  * Version: 1.0 (05-APR-2013)
- * Dual licensed under the MIT and GPL licenses:
+ * Licensed under the MIT license:
  * http://www.opensource.org/licenses/mit-license.php
  * Requires: jQuery v1.7.0 or later
  */
