@@ -7,6 +7,8 @@ The files needed to make it work are these:
 - src/jquery.simpleLens.js does all the work for the magnifying of the images.
 - css/jquery.simpleLens.css provides the css code needed from the magnifying script.
 
+**jquery.simpleGallery.js is optional and you can use any plugin that does the same thing.**
+
 The demo folder contains all the file needed for the demo.
 In the demo.html file you can find some examples.
 
