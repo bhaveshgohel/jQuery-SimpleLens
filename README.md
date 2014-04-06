@@ -12,7 +12,7 @@ The files needed to make it work are these:
 The demo folder contains all the file needed for the demo.
 In the demo.html file you can find some examples.
 
-The basic html markup to make the lens plugin work is this:
+**The basic html markup to make the lens plugin work is this**:
 ```html
     <div class="gallery-container" id="demo-1">
         <div class="container">
@@ -25,14 +25,14 @@ The basic html markup to make the lens plugin work is this:
     </div>
 ```
 
-And this is the javascript initialization code:
+**And this is the javascript initialization code**:
 ```javascript
     $('#demo-1 .big-image').simpleLens({
         loading_image: 'demo/images/loading.gif'
     });
 ```
 
-Options:
+**Options**:
 ```javascript
     $.fn.simpleLens.defaults = {
         anchor_parent_class: '.lens-image',
