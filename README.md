@@ -25,7 +25,7 @@ In the demo.html file you can find some examples.
 </div>
 ```
 
-**Initialize plugin like this**:
+**Initialize the plugin like this**:
 ```javascript
 $('#demo-1 .simpleLens-big-image').simpleLens({
     loading_image: 'demo/images/loading.gif'
