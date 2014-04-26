@@ -1,10 +1,10 @@
 /* CSS Document */
-.container{
+.simpleLens-container{
     display: table;
     position: relative;
 }
 
-.big-image-container {
+.simpleLens-big-image-container {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -13,11 +13,11 @@
     width: 350px;
 }
 
-.big-image {
+.simpleLens-big-image {
     max-width: 100%;
 }
 
-.lens-image {
+.simpleLens-lens-image {
     height: auto !important;
     width: 350px;
     display: inline-block;
@@ -28,7 +28,7 @@
     position:relative;
 }
 
-.mouse-cursor{
+.simpleLens-mouse-cursor{
 	background-color:#CCC;
 	opacity:0.2;
 	filter: alpha(opacity = 20);
@@ -40,7 +40,7 @@
 	cursor:none;
 }
 
-.lens-element {
+.simpleLens-lens-element {
     background-color: #FFFFFF;
     box-shadow: 0 0 2px 2px #8E8E8E;
     height: 400px;
@@ -53,7 +53,7 @@
     text-align: center;
 }
 
-.lens-element img{
+.simpleLens-lens-element img{
     position:relative;
     top:0;
     left:0;
