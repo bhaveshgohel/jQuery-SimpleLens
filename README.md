@@ -14,11 +14,11 @@ In the demo.html file you can find some examples.
 
 **The basic html markup to make the lens plugin work is this**:
 ```html
-<div class="gallery-container" id="demo-1">
-    <div class="container">
-        <div class="big-image-container">
-            <a class="lens-image" data-lens-image="demo/large/image.jpg">
-                <img src="demo/medium/image.jpg" class="big-image">
+<div class="simpleLens-gallery-container" id="demo-1">
+    <div class="simpleLens-container">
+        <div class="simpleLens-big-image-container">
+            <a class="simpleLens-lens-image" data-lens-image="demo/large/benvado_elisa_bianco.jpg">
+                <img src="demo/medium/benvado_elisa_bianco.jpg" class="simpleLens-big-image">
             </a>
         </div>
     </div>
@@ -27,7 +27,7 @@ In the demo.html file you can find some examples.
 
 **And this is the javascript initialization code**:
 ```javascript
-$('#demo-1 .big-image').simpleLens({
+$('#demo-1 .simpleLens-big-image').simpleLens({
     loading_image: 'demo/images/loading.gif'
 });
 ```
@@ -35,12 +35,12 @@ $('#demo-1 .big-image').simpleLens({
 **Options**:
 ```javascript
 $.fn.simpleLens.defaults = {
-    anchor_parent_class: '.lens-image',
+    anchor_parent_class: '.simpleLens-lens-image',
     lens_image_attr: 'data-lens-image',
-    big_image_class: '.big-image',
-    parent_class: '.big-image-container',
-    lens_class: 'lens-element',
-    cursor_class: 'mouse-cursor',
+    big_image_class: '.simpleLens-big-image',
+    parent_class: '.simpleLens-big-image-container',
+    lens_class: 'simpleLens-lens-element',
+    cursor_class: 'simpleLens-mouse-cursor',
     loading_image: 'images/loading.gif',
     open_lens_event: 'mouseenter'
 };
