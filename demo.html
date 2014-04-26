@@ -11,29 +11,29 @@
 
 <article>
     <h1>Demo with mouseenter - mouseleave</h1>
-    <div class="gallery-container" id="demo-1">
-        <div class="container">
-            <div class="big-image-container">
-                <a class="lens-image" data-lens-image="demo/large/benvado_elisa_bianco.jpg">
-                    <img src="demo/medium/benvado_elisa_bianco.jpg" class="big-image">
+    <div class="simpleLens-gallery-container" id="demo-1">
+        <div class="simpleLens-container">
+            <div class="simpleLens-big-image-container">
+                <a class="simpleLens-lens-image" data-lens-image="demo/large/benvado_elisa_bianco.jpg">
+                    <img src="demo/medium/benvado_elisa_bianco.jpg" class="simpleLens-big-image">
                 </a>
             </div>
         </div>
 
-        <div class="thumbnails-container">
-            <a href="#" class="thumbnail-wrapper"
+        <div class="simpleLens-thumbnails-container">
+            <a href="#" class="simpleLens-thumbnail-wrapper"
                data-lens-image="demo/large/benvado_elisa_bianco.jpg"
                data-big-image="demo/medium/benvado_elisa_bianco.jpg">
                 <img src="demo/thumbnail/benvado_elisa_bianco.jpg">
             </a>
 
-            <a href="#" class="thumbnail-wrapper"
+            <a href="#" class="simpleLens-thumbnail-wrapper"
                data-lens-image="demo/large/camper_21926_red.jpg"
                data-big-image="demo/medium/camper_21926_red.jpg">
                 <img src="demo/thumbnail/camper_21926_red.jpg">
             </a>
 
-            <a href="#" class="thumbnail-wrapper"
+            <a href="#" class="simpleLens-thumbnail-wrapper"
                data-lens-image="demo/large/flylondon_most_red.jpg"
                data-big-image="demo/medium/flylondon_most_red.jpg">
                 <img src="demo/thumbnail/flylondon_most_red.jpg">
@@ -45,29 +45,29 @@
 <article>
     <h1>Demo with click - mouseleave</h1>
 
-    <div class="gallery-container" id="demo-2">
-        <div class="container">
-            <div class="big-image-container">
-                <a class="lens-image" data-lens-image="demo/large/benvado_elisa_bianco.jpg">
-                    <img src="demo/medium/benvado_elisa_bianco.jpg" class="big-image">
+    <div class="simpleLens-gallery-container" id="demo-2">
+        <div class="simpleLens-container">
+            <div class="simpleLens-big-image-container">
+                <a class="simpleLens-lens-image" data-lens-image="demo/large/benvado_elisa_bianco.jpg">
+                    <img src="demo/medium/benvado_elisa_bianco.jpg" class="simpleLens-big-image">
                 </a>
             </div>
         </div>
 
-        <div class="thumbnails-container">
-            <a href="#" class="thumbnail-wrapper"
+        <div class="simpleLens-thumbnails-container">
+            <a href="#" class="simpleLens-thumbnail-wrapper"
                data-lens-image="demo/large/benvado_elisa_bianco.jpg"
                data-big-image="demo/medium/benvado_elisa_bianco.jpg">
                 <img src="demo/thumbnail/benvado_elisa_bianco.jpg">
             </a>
 
-            <a href="#" class="thumbnail-wrapper"
+            <a href="#" class="simpleLens-thumbnail-wrapper"
                data-lens-image="demo/large/camper_21926_red.jpg"
                data-big-image="demo/medium/camper_21926_red.jpg">
                 <img src="demo/thumbnail/camper_21926_red.jpg">
             </a>
 
-            <a href="#" class="thumbnail-wrapper"
+            <a href="#" class="simpleLens-thumbnail-wrapper"
                data-lens-image="demo/large/flylondon_most_red.jpg"
                data-big-image="demo/medium/flylondon_most_red.jpg">
                 <img src="demo/thumbnail/flylondon_most_red.jpg">
@@ -82,11 +82,11 @@
 
 <script>
     $(document).ready(function(){
-        $('#demo-1 .thumbnails-container img').simpleGallery({
+        $('#demo-1 .simpleLens-thumbnails-container img').simpleGallery({
             loading_image: 'demo/images/loading.gif'
         });
 
-        $('#demo-1 .big-image').simpleLens({
+        $('#demo-1 .simpleLens-big-image').simpleLens({
             loading_image: 'demo/images/loading.gif'
         });
     });
@@ -94,12 +94,12 @@
 
 <script>
     $(document).ready(function(){
-        $('#demo-2 .thumbnails-container img').simpleGallery({
+        $('#demo-2 .simpleLens-thumbnails-container img').simpleGallery({
             loading_image: 'demo/images/loading.gif',
             show_event: 'click'
         });
 
-        $('#demo-2 .big-image').simpleLens({
+        $('#demo-2 .simpleLens-big-image').simpleLens({
             loading_image: 'demo/images/loading.gif',
             open_lens_event: 'click'
         });

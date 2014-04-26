@@ -1,7 +1,7 @@
 /*!
  * jQuery Lens Simple Plugin
  * Copyright (c) 2014 Pietro Simone Di Chiara
- * Version: 1.0 (05-APR-2013)
+ * Version: 1.0.1 (05-APR-2013)
  * Licensed under the MIT license:
  * http://www.opensource.org/licenses/mit-license.php
  * Requires: jQuery v1.7.0 or later
@@ -9,7 +9,7 @@
 (function ($) {
     "use strict";
 
-    var ver = 'simpleLens-1.0';
+    var ver = 'simpleLens-1.0.1';
 
     function debug(message) {
         if (window.console) {
@@ -120,7 +120,7 @@
                 big_image.init(parent_anchor.find(opts.big_image_class));
 
                 if (this.lens_image_url === undefined) {
-                    debug('Lens image url problem.');
+                    debug('Cannot find lens image. URL: ' + this.lens_image_url);
                     debug(that);
                     debug(parent_anchor);
                     debug(lens_image_url);
@@ -156,7 +156,7 @@
             destroy: function(){
                 cursor.destroy();
 
-                if(this.lens_container.length > 0){
+                if(this.lens_container !== undefined && this.lens_container.length > 0){
                     $('.' + opts.lens_class).remove();
                     this.lens_event_unbind();
                 }
@@ -217,12 +217,12 @@
     $.fn.simpleLens.ver = function () { return ver; };
 
     $.fn.simpleLens.defaults = {
-        anchor_parent_class: '.lens-image',
+        anchor_parent_class: '.simpleLens-lens-image',
         lens_image_attr: 'data-lens-image',
-        big_image_class: '.big-image',
-        parent_class: '.big-image-container',
-        lens_class: 'lens-element',
-        cursor_class: 'mouse-cursor',
+        big_image_class: '.simpleLens-big-image',
+        parent_class: '.simpleLens-big-image-container',
+        lens_class: 'simpleLens-lens-element',
+        cursor_class: 'simpleLens-mouse-cursor',
         loading_image: 'images/loading.gif',
         open_lens_event: 'mouseenter'
     };

@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    var ver = 'simpleGallery-1.0';
+    var ver = 'simpleGallery-1.0.1';
 
     function debug(message) {
         if (window.console) {
@@ -47,13 +47,13 @@
     $.fn.simpleGallery.ver = function () { return ver; };
 
     $.fn.simpleGallery.defaults = {
-        thumbnail_anchor: '.thumbnail-wrapper',
-        big_image_class: 'big-image',
+        thumbnail_anchor: '.simpleLens-thumbnail-wrapper',
+        big_image_class: 'simpleLens-big-image',
         lens_image_attr: 'data-lens-image',
         big_image_attr: 'data-big-image',
-        parent_anchor_class: 'lens-image',
-        gallery_container: '.gallery-container',
-        big_image_container: '.big-image-container',
+        parent_anchor_class: 'simpleLens-lens-image',
+        gallery_container: '.simpleLens-gallery-container',
+        big_image_container: '.simpleLens-big-image-container',
         loading_image: 'images/loading.gif',
         show_event: 'mouseenter'
     };
